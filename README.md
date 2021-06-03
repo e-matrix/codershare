@@ -9,3 +9,6 @@ This is a e-Matrix internal project.
 
 Set up environment for Elixir-development within a Debian-terminal in Windows
 
+## First feature "Hello world"
+
+    elixir -r hello.exs
