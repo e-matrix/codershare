@@ -3,9 +3,9 @@
 
 This is a e-Matrix internal project.
 
-Stay tuned!
 
-Hamza & Andi
-e-Matrix Innovations GmbH
-4600 Wels, Austria
+
+## 1. Day
+
+Set up environment for Elixir-development within a Debian-terminal in Windows
 
