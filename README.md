@@ -12,3 +12,8 @@ Set up environment for Elixir-development within a Debian-terminal in Windows
 ## First feature "Hello world"
 
     elixir -r hello.exs
+
+
+## 1. 1/2 Day
+
+Anna joins the team
