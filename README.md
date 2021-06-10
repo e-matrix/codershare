@@ -15,3 +15,10 @@ Set up environment for Elixir-development within a Debian-terminal in Windows
 ## 1. 1/2 Day
 
 Anna joins the team
+
+## 2. Day
+
+See path `./greeter`
+- Play with the REPL
+- Generate a simple mix - project
+- Write the first tests (Greeter)
