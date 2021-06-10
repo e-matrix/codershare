@@ -3,6 +3,10 @@ defmodule GreeterTest do
   doctest Greeter
 
   test "greets the world" do
-    assert Greeter.hello() == :world
+    assert Greeter.hello("World") == "Hello, World!"
+  end
+
+  test "greets a person" do
+    assert Greeter.hello("Anna") == "Hello, Anna!"
   end
 end
