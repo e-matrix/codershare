@@ -23,13 +23,13 @@ See path `./greeter`
 - Generate a simple mix - project
 - Write the first tests (Greeter)
 
+```
     git pull
     cd greeter
     asdf install
     mix test --trace --seed 0
     
-   
-    GreeterTest [test/greeter_test.exs]
+==> GreeterTest [test/greeter_test.exs]
       * test Hello world if no name is provided [L#5]
       * test Hello world if no name is provided (0.01ms) [L#5]
       * test Informal hello if only first_name [L#9]   
@@ -44,5 +44,5 @@ See path `./greeter`
     4 tests, 0 failures
      
     Randomized with seed 0
-
+```
     
