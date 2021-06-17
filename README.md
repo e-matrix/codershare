@@ -46,3 +46,41 @@ See path `./greeter`
     Randomized with seed 0
 ```
     
+## 3. Day
+
+See path `./greeter`
+- Play with tests
+- write new tests
+- pattern-matching
+- play with `Elixir.Map`
+
+```
+    git pull
+    mix test --trace --seed 0
+```
+
+Now we can call `.hello(%{name: ...})` and `.hello(%{name: ..., age: ...})` and
+the program returns just "Hello, NAME!" if the map has only one key 'name'.
+Otherwise, when the map contains a key 'name' and a key 'age' then we print
+"My name is 'name'. I'm 'age'."
+
+Notice the sequence of our pattern-matches.
+
+1st we define the verson with 'name' and 'age'. This version of our function
+matchens only if our param has both, name and age. If so, it will print
+"My name is ....". When done, Elixir will not continue to find another match.
+
+Then we define the version with 'name' only after the 1st definition. 
+This version matches if 'name' and whatever else is in the map. Thus it would 
+also match for 'name' and 'age' because 'age' doesn't matter in this version.
+But because our first definition with name and age already matched and was
+executed, then this 2nd version will never be triggerd.
+
+Otherwise, if 'age' is missing for the 1st definition. This function will be
+skipped and not being executed. Elixir continues to search for another match.
+It will find our 2nd definition, where only 'name' must be given.
+
+## 4. Day
+
+Preview: introduce lists and `Elixir.Enum`
+
