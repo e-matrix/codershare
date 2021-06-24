@@ -35,4 +35,27 @@ defmodule GreeterTest do
       assert "My name is Andi. I'm 57." == Greeter.hello(andi)
     end
   end
+
+  describe "With a list of people" do
+    test ".sum_up_age/1" do
+      # Given
+      hamza = %{age: 32, name: "Hamza"}
+      andi = %{age: 57, name: "Andi"}
+      team = [hamza, andi]
+
+      # Then
+      assert 89 == Greeter.sum_up_age(team)
+    end
+
+    test ".avg/1" do
+      hamza = %{age: 32, name: "Hamza"}
+      andi = %{age: 57, name: "Andi"}
+      team = [hamza, andi]
+
+      # Then
+      assert 44.5 == Greeter.avg(team)
+    end
+  end
+
+
 end
