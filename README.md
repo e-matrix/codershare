@@ -66,7 +66,7 @@ Otherwise, when the map contains a key 'name' and a key 'age' then we print
 
 Notice the sequence of our pattern-matches.
 
-1st we define the verson with 'name' and 'age'. This version of our function
+1st we define the version with 'name' and 'age'. This version of our function
 matchens only if our param has both, name and age. If so, it will print
 "My name is ....". When done, Elixir will not continue to find another match.
 
@@ -74,7 +74,7 @@ Then we define the version with 'name' only after the 1st definition.
 This version matches if 'name' and whatever else is in the map. Thus it would 
 also match for 'name' and 'age' because 'age' doesn't matter in this version.
 But because our first definition with name and age already matched and was
-executed, then this 2nd version will never be triggerd.
+executed, then this 2nd version will never be triggered.
 
 Otherwise, if 'age' is missing for the 1st definition. This function will be
 skipped and not being executed. Elixir continues to search for another match.
@@ -82,5 +82,11 @@ It will find our 2nd definition, where only 'name' must be given.
 
 ## 4. Day
 
-Preview: introduce lists and `Elixir.Enum`
+We introduced `Enum` and lists.
+Other than that we did some examples with recursion.
+
+Hamza will review and practice captures 1 to 10 of the Elixir guide.
+Next time we will recap this basics once more and start using that 
+knowledge in a new project, "Learning Cards".
+
 
