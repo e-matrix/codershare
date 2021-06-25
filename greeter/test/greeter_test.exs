@@ -57,5 +57,42 @@ defmodule GreeterTest do
     end
   end
 
+  describe "Day 5" do
+    setup do
+      bob = %{name: "Bob", role: :mentor}
+      alice = %{name: "Alice", role: :trainee}
+      mark = %{name: "Mark", role: :manager}
+      fritz = %{name: "Fritz", role: :something_unknown}
 
+      {:ok, %{team: [bob, alice, mark, fritz]}}
+    end
+
+    test ".list_members_with_if()", %{team: team} do
+      assert Greeter.list_team_with_if(team) =~ "Bob is a mentor"
+      assert Greeter.list_team_with_if(team) =~ "Alice is a trainee"
+      assert Greeter.list_team_with_if(team) =~ "Mark is a manager"
+      assert Greeter.list_team_with_if(team) =~ "Fritz has an unknown role in the team"
+    end
+
+    test ".list_members_with_cond()", %{team: team} do
+      assert Greeter.list_team_with_cond(team) =~ "Bob is a mentor"
+      assert Greeter.list_team_with_cond(team) =~ "Alice is a trainee"
+      assert Greeter.list_team_with_cond(team) =~ "Mark is a manager"
+      assert Greeter.list_team_with_cond(team) =~ "Fritz has an unknown role in the team"
+    end
+
+    test ".list_members_with_case()", %{team: team} do
+      assert Greeter.list_team_with_case(team) =~ "Bob is a mentor"
+      assert Greeter.list_team_with_case(team) =~ "Alice is a trainee"
+      assert Greeter.list_team_with_case(team) =~ "Mark is a manager"
+      assert Greeter.list_team_with_case(team) =~ "Fritz has an unknown role in the team"
+    end
+
+    test ".list_members_with_pattern_match()", %{team: team} do
+      assert Greeter.list_team_with_pattern_match(team) =~ "Bob is a mentor"
+      assert Greeter.list_team_with_pattern_match(team) =~ "Alice is a trainee"
+      assert Greeter.list_team_with_pattern_match(team) =~ "Mark is a manager"
+      assert Greeter.list_team_with_pattern_match(team) =~ "Fritz has an unknown role in the team"
+    end
+  end
 end
