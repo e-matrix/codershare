@@ -1,6 +1,6 @@
 defmodule Cards do
 
-  def new do
-    %{question: nil}
+  def new(header) do
+    %{header: header}
   end
 end
