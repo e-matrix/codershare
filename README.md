@@ -89,4 +89,17 @@ Hamza will review and practice captures 1 to 10 of the Elixir guide.
 Next time we will recap this basics once more and start using that 
 knowledge in a new project, "Learning Cards".
 
+## 5. Day
+
+Introduced structures `if`, `cond`, `case`, and how to solve it with
+pattern matching.
+
+Also, started a new Elixir project `cards`.
+
+  - We can create a card with a header
+  - We can create a stack with a list of cards
+  - We can draw a random card from a stack of cards
+
+
+
 
